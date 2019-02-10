@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Convert to Telinkrin colours</title>
+    <style media="screen">
+      body 
+      {
+        font-family: 'Overpass', sans-serif;
+        /* background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%); */
+      }
+
+      .palette 
+      {
+        border-radius: 10px;
+        height: 60px;
+        line-height: 60px;
+        margin: 20px;
+        text-align: center;
+        width: 60px;
+      }
+
+      .color-white
+      {
+        color: grey;
+      }
+
+      .color-black
+      {
+        color: black;
+      }
+
+      .container 
+      {
+        display: grid;
+        grid-template-columns: repeat(15, 120px);
+        max-width: 100%;
+        width: auto;
+      }
+
+      .container2 
+      {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 120px);
+      }
+
+      .container3 
+      {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, 120px);
+      }
+
+      .container4 
+      {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(12, 120px);
+      }
+
+      .telinkrin 
+      {
+        -webkit-filter: url(#telinkrin);
+        -moz-filter: url(#telinkrin);
+        -o-filter: url(#telinkrin);
+        -ms-filter: url(#telinkrin);
+        filter: url(#telinkrin);
+      }
+    </style>
+  </head>
+
+<svg height="0">
+  <filter id="telinkrin" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+  	<feColorMatrix type="matrix" 
+       values=" 0.33 0.33 0.33 0 0
+                0.33 0.33 0.33 0 0
+                0.33 0.33 0.33 0 0
+                0    0    0    1 0" 
+    in="SourceGraphic" result="colormatrix"/>
+  	<feComponentTransfer in="colormatrix" result="componentTransfer">
+      <feFuncR type="table" tableValues="0.21 0.43 0.7"   />
+  		<feFuncG type="table" tableValues="0.38 0.65 0.81"  />
+  		<feFuncB type="table" tableValues="0.44 0.72 0.84"  />
+  		<feFuncA type="table" tableValues="0    1.00 1.00"  />
+    </feComponentTransfer>
+  	<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+  </filter>
+</svg>
+
+  <body>
+  
+    <h1>Original</h1>
+  
+    <div class="container3 color-white" id="demo1">
+    </div>
+  
+    <h1>Telinkrin</h1>
+  
+    <div class="container3 telinkrin color-black" id="demo2">
+    </div>
+
+    <script type="text/javascript">
+  
+      let titlenames = ["original", "telinkrin"];
+      let colours = ["#000", "#000009", "#0064A2", "#006575", "#ff99cc", "#DE6161", "#F0CA2A", "#FE4401", "#DFDFDF", "#00FF00"];
+
+      function attachNewNode(target, colours, titlenames)
+      {
+      	let length = colours.length;
+      	for (let i = 0; i < length; i++)
+        {
+          let node = document.createElement('div');
+          node.className = 'palette';
+          node.title = parseInt(i+1) + " – " + titlenames;
+          node.style = `background-color: ${colours[i]}`;
+          node.textContent = parseInt(i+1);
+
+          target.appendChild(node);
+        }
+      }
+      attachNewNode(document.getElementById("demo1"), colours, titlenames[0]);
+      attachNewNode(document.getElementById("demo2"), colours, titlenames[1]);
+
+    </script>
+
+  </body>
+
+</html>

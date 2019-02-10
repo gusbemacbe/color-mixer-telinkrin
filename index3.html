@@ -1,0 +1,72 @@
+ <html style="background-image:url(background.png);">
+ <head>
+ 	<title>jquery color mixer</title>
+ 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+ 	<script type="text/javascript" src="jquery-color/jquery.color.js"></script>
+    <script type="text/javascript" src="color_mixer3.js"></script>
+ 	<script type="text/javascript">
+ 	$(function(){
+
+ 		$("button").on("click",function(){
+            //initialize a jquery color object
+            color1 = $.Color($('#color1').val());
+            color1 = color1.alpha(parseFloat($('#color1_alpha').val()));
+
+            color2 = $.Color($('#color2').val());
+            color2 = color2.alpha(parseFloat($('#color2_alpha').val()));
+
+            color3 = $.Color($('#color3').val());
+            color3 = color3.alpha(parseFloat($('#color3_alpha').val()));
+
+            color4 = $.Color($('#color4').val());
+            color4 = color4.alpha(parseFloat($('#color4_alpha').val()));
+
+            //Mixing colors
+ 			   color = Color_mixer.mix(color1, color2, color3, color4);
+
+            //set background color to result color
+            $("html body").css("background-color",color.toRgbaString());
+ 		});
+
+        $('#color1').on("change",function(){
+            $(this).next().css("background-color",$('#color1').val());
+        })
+        $('#color2').on("change",function(){
+            $(this).next().css("background-color",$('#color2').val());
+        })
+        $('#color3').on("change",function(){
+            $(this).next().css("background-color",$('#color3').val());
+        })
+        $('#color4').on("change",function(){
+            $(this).next().css("background-color",$('#color4').val());
+        })
+ 	});
+
+ 	</script>
+ </head>
+ <body>
+
+ 	<input id="color1" placeholder="color 1" value="#356170" style="float:left">
+    <input id="color1_alpha" placeholder="alpha" style="float:left">
+    <div style="height:20px;width:20px;background-color:#356170;float:left;"></div>
+    <div style="clear:both;"></div>
+
+ 	<input id="color2" placeholder="color 2" value="#6DA5B7" style="float:left;">
+    <input id="color2_alpha" placeholder="alpha" style="float:left">
+    <div style="height:20px;width:20px;background-color:#6DA5B7;float:left;"></div>
+    <div style="clear:both;"></div>
+
+ 	<input id="color3" placeholder="color 3" value="#B2CED6" style="float:left;">
+    <input id="color3_alpha" placeholder="alpha" style="float:left">
+    <div style="height:20px;width:20px;background-color:#B2CED6;float:left;"></div>
+    <div style="clear:both;"></div>
+    
+ 	<input id="color4" placeholder="color 4" value="#00ff00" style="float:left;">
+    <input id="color4_alpha" placeholder="alpha" style="float:left">
+    <div style="height:20px;width:20px;background-color:#00ff00;float:left;"></div>
+    <div style="clear:both;"></div>
+
+ 	<button>MIX!</button>
+ 
+ </body>
+ </html>
