@@ -1,13 +1,14 @@
  <html style="background-image:url(background.png);">
  <head>
- 	<title>jquery color mixer</title>
- 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
- 	<script type="text/javascript" src="jquery-color/jquery.color.js"></script>
-    <script type="text/javascript" src="color_mixer.js"></script>
+ 	<title>Colour Mixer to get Telinkrin colour</title>
+ 	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+ 	<script type="text/javascript" src="js/jquery.color.js"></script>
+   <script type="text/javascript" src="js/color_mixer.js"></script>
  	<script type="text/javascript">
- 	$(function(){
-
- 		$("button").on("click",function(){
+ 	$(function()
+    {
+ 		$("button").on("click",function()
+        {
             //initialize a jquery color object
             color1 = $.Color($('#color1').val());
             color1 = color1.alpha(parseFloat($('#color1_alpha').val()));
@@ -37,44 +38,45 @@
             color9 = color9.alpha(parseFloat($('#color9_alpha').val()));
 
             //Mixing colors
- 			   color = Color_mixer.mix(color1, color2, color3, color4, color5, color6, color7, color8, color9);
+    		color = Color_mixer.mix(color1, color2, color3, color4, color5, color6, color7, color8, color9);
 
             //set background color to result color
             $("html body").css("background-color",color.toRgbaString());
- 		});
+     		});
 
-        $('#color1').on("change",function(){
-            $(this).next().css("background-color",$('#color1').val());
-        })
-        $('#color2').on("change",function(){
-            $(this).next().css("background-color",$('#color2').val());
-        })
-        $('#color3').on("change",function(){
-            $(this).next().css("background-color",$('#color3').val());
-        })
-        $('#color4').on("change",function(){
-            $(this).next().css("background-color",$('#color4').val());
-        })
-        $('#color5').on("change",function(){
-            $(this).next().css("background-color",$('#color5').val());
-        })
-        $('#color6').on("change",function(){
-            $(this).next().css("background-color",$('#color6').val());
-        })
-        $('#color7').on("change",function(){
-            $(this).next().css("background-color",$('#color7').val());
-        })
-        $('#color8').on("change",function(){
-            $(this).next().css("background-color",$('#color8').val());
-        })
-        $('#color9').on("change",function(){
-            $(this).next().css("background-color",$('#color9').val());
-        })
+            $('#color1').on("change",function(){
+               $(this).next().css("background-color",$('#color1').val());
+            })
+            $('#color2').on("change",function(){
+               $(this).next().css("background-color",$('#color2').val());
+            })
+            $('#color3').on("change",function(){
+               $(this).next().css("background-color",$('#color3').val());
+            })
+            $('#color4').on("change",function(){
+               $(this).next().css("background-color",$('#color4').val());
+            })
+            $('#color5').on("change",function(){
+               $(this).next().css("background-color",$('#color5').val());
+            })
+            $('#color6').on("change",function(){
+               $(this).next().css("background-color",$('#color6').val());
+            })
+            $('#color7').on("change",function(){
+               $(this).next().css("background-color",$('#color7').val());
+            })
+            $('#color8').on("change",function(){
+               $(this).next().css("background-color",$('#color8').val());
+            })
+            $('#color9').on("change",function(){
+               $(this).next().css("background-color",$('#color9').val());
+            })
 
  	});
 
  	</script>
  </head>
+
  <body>
 
  	<input id="color1" placeholder="color 1" value="#356170" style="float:left">

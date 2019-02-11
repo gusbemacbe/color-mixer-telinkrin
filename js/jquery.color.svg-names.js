@@ -11,7 +11,8 @@
  *
  * Date: @DATE
  */
-jQuery.extend( jQuery.Color.names, {
+jQuery.extend( jQuery.Color.names, 
+{
 
 	// 4.3. Extended color keywords (minus the basic ones in core color plugin)
 	aliceblue: "#f0f8ff",
@@ -146,4 +147,4 @@ jQuery.extend( jQuery.Color.names, {
 	wheat: "#f5deb3",
 	whitesmoke: "#f5f5f5",
 	yellowgreen: "#9acd32"
-} );
+});
