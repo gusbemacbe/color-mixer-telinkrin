@@ -11,22 +11,22 @@
               filter: url(#telinkrin);
             }
         </style>
-        <filter id="telinkrin" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        	<feColorMatrix type="matrix" 
-             values=" 0.33 0.33 0.33 0 0
-                      0.33 0.33 0.33 0 0
-                      0.33 0.33 0.33 0 0
-                      0    0    0    1 0" 
-          in="SourceGraphic" result="colormatrix"/>
-        	<feComponentTransfer in="colormatrix" result="componentTransfer">
-            <feFuncR type="table" tableValues="0.21 0.43 0.7"   />
-        		<feFuncG type="table" tableValues="0.38 0.65 0.81"  />
-        		<feFuncB type="table" tableValues="0.44 0.72 0.84"  />
-        		<feFuncA type="table" tableValues="0    1.00 1.00"  />
-          </feComponentTransfer>
-        	<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
-        </filter>
     </defs>
+    <filter id="telinkrin" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    	<feColorMatrix type="matrix" 
+         values=" 0.33 0.33 0.33 0 0
+                  0.33 0.33 0.33 0 0
+                  0.33 0.33 0.33 0 0
+                  0    0    0    1 0" 
+      in="SourceGraphic" result="colormatrix"/>
+    	<feComponentTransfer in="colormatrix" result="componentTransfer">
+        <feFuncR type="table" tableValues="0.21 0.43 0.7"   />
+    		<feFuncG type="table" tableValues="0.38 0.65 0.81"  />
+    		<feFuncB type="table" tableValues="0.44 0.72 0.84"  />
+    		<feFuncA type="table" tableValues="0    1.00 1.00"  />
+      </feComponentTransfer>
+    	<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+    </filter>
     <path fill="url(#paint0_linear)" class="telinkrin" d="M34.6894 84H32.8563C12.0017 84 8.83357 81.0584 8.7701 60.5911L43.8342 51.75L34.6894 84Z"/>
     <path fill="url(#paint1_linear)" class="telinkrin" d="M34.6894 84H54.3066C63.8367 84 69.6736 83.3858 73.21 80.7675L43.9523 51.7201L43.8342 51.75L34.6894 84Z"/>
     <path fill="url(#paint2_linear)" class="telinkrin" d="M73.21 80.7675C77.4909 77.592 78.3948 71.4742 78.3948 59.9391V43.0763C78.3948 43.0623 78.3948 43.0487 78.3948 43.0356L43.9523 51.7201L73.21 80.7675Z"/>
