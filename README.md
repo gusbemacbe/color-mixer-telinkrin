@@ -164,7 +164,7 @@ Click to compute filters, we get `filter: invert(69%) sepia(19%) saturate(676%) 
 }
 ```
 
-Converting the original colours to produce Telinkrin colours, and we also must add `grayscale(100%)` to it. Here is the [demo 3](demo4.html).
+Converting the original colours to produce Telinkrin colours, and we also must add `grayscale(100%)` to it. Here is the [demo 4](demo4.html).
 
 ### Disadvantages
 
