@@ -59,54 +59,27 @@
         grid-template-columns: repeat(12, 120px);
       }
 
-      .telinkrin 
-      {
-        -webkit-filter: url(#telinkrin);
-        -moz-filter: url(#telinkrin);
-        -o-filter: url(#telinkrin);
-        -ms-filter: url(#telinkrin);
-        filter: url(#telinkrin);
-      }
-
       .grayscale 
       {
-        -webkit-filter: url(#grayscale);
-        -moz-filter: url(#grayscale);
-        -o-filter: url(#grayscale);
-        -ms-filter: url(#grayscale);
-        filter: url(#grayscale);
+        filter: grayscale(100%);
+      }
+
+      .telinkrin
+      {
+        filter: grayscale(100%) invert(31%) sepia(39%) saturate(529%) hue-rotate(149deg) brightness(97%) contrast(88%);
+      }
+
+      .telinkrin2
+      {
+        filter: grayscale(100%) invert(69%) sepia(19%) saturate(676%) hue-rotate(148deg) brightness(86%) contrast(90%);
+      }
+
+      .telinkrin3 
+      {
+        filter: grayscale(100%) invert(87%) sepia(43%) saturate(205%) hue-rotate(161deg) brightness(88%) contrast(89%);
       }
     </style>
   </head>
-
-<svg height="0">
-  <filter id="grayscale" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-  	<feColorMatrix type="matrix" 
-       values=" 0.33 0.33 0.33 0 0
-                0.33 0.33 0.33 0 0
-                0.33 0.33 0.33 0 0
-                0    0    0    1 0" 
-    in="SourceGraphic" result="colormatrix"/>
-  </filter>
-</svg>
-
-<svg height="0">
-  <filter id="telinkrin" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-  	<feColorMatrix type="matrix" 
-       values=" 0.33 0.33 0.33 0 0
-                0.33 0.33 0.33 0 0
-                0.33 0.33 0.33 0 0
-                0    0    0    1 0" 
-    in="SourceGraphic" result="colormatrix"/>
-  	<feComponentTransfer in="colormatrix" result="componentTransfer">
-      <feFuncR type="table" tableValues="0.21 0.43 0.7"   />
-  		<feFuncG type="table" tableValues="0.38 0.65 0.81"  />
-  		<feFuncB type="table" tableValues="0.44 0.72 0.84"  />
-  		<feFuncA type="table" tableValues="0    1.00 1.00"  />
-    </feComponentTransfer>
-  	<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
-  </filter>
-</svg>
 
   <body>
   
@@ -121,8 +94,20 @@
     </div>
   
     <h1>Telinkrin</h1>
-  
-    <div class="container3 telinkrin color-black" id="demo3">
+
+    <h2>1st colour <span style="color: #356170">#356170</span></h2>
+
+    <div class="container3 telinkrin color-white" id="demo3">
+    </div>
+
+    <h2>2nd colour <span style="color: #6da5b7">#6da5b7</span></h2>
+
+    <div class="container3 telinkrin2 color-white" id="demo4">
+    </div>
+
+    <h2>3rd colour <span style="color: #b2ced6">#b2ced6</span></h2>
+
+    <div class="container3 telinkrin3 color-white" id="demo5">
     </div>
 
     <script type="text/javascript">
@@ -147,6 +132,8 @@
       attachNewNode(document.getElementById("demo1"), colours, titlenames[0]);
       attachNewNode(document.getElementById("demo2"), colours, titlenames[1]);
       attachNewNode(document.getElementById("demo3"), colours, titlenames[2]);
+      attachNewNode(document.getElementById("demo4"), colours, titlenames[2]);
+      attachNewNode(document.getElementById("demo5"), colours, titlenames[2]);
 
     </script>
 

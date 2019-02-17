@@ -1,5 +1,7 @@
 {
-  "spellright.language": [],
+  "spellright.language": [
+    "en_GB"
+  ],
   "spellright.documentTypes": [
     "css",
     "markdown",
