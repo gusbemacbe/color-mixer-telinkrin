@@ -67,8 +67,28 @@
         -ms-filter: url(#telinkrin);
         filter: url(#telinkrin);
       }
+
+      .grayscale 
+      {
+        -webkit-filter: url(#grayscale);
+        -moz-filter: url(#grayscale);
+        -o-filter: url(#grayscale);
+        -ms-filter: url(#grayscale);
+        filter: url(#grayscale);
+      }
     </style>
   </head>
+
+<svg height="0">
+  <filter id="grayscale" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+  	<feColorMatrix type="matrix" 
+       values=" 0.33 0.33 0.33 0 0
+                0.33 0.33 0.33 0 0
+                0.33 0.33 0.33 0 0
+                0    0    0    1 0" 
+    in="SourceGraphic" result="colormatrix"/>
+  </filter>
+</svg>
 
 <svg height="0">
   <filter id="telinkrin" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -94,15 +114,18 @@
   
     <div class="container3 color-white" id="demo1">
     </div>
+
+    <div class="container3 grayscale color-white" id="demo2">
+    </div>
   
     <h1>Telinkrin</h1>
   
-    <div class="container3 telinkrin color-black" id="demo2">
+    <div class="container3 telinkrin color-black" id="demo3">
     </div>
 
     <script type="text/javascript">
   
-      let titlenames = ["original", "telinkrin"];
+      let titlenames = ["original", "grayscale", "telinkrin"];
       let colours = ["#000", "#000009", "#0064A2", "#006575", "#ff99cc", "#DE6161", "#F0CA2A", "#FE4401", "#DFDFDF", "#00FF00"];
 
       function attachNewNode(target, colours, titlenames)
@@ -121,6 +144,7 @@
       }
       attachNewNode(document.getElementById("demo1"), colours, titlenames[0]);
       attachNewNode(document.getElementById("demo2"), colours, titlenames[1]);
+      attachNewNode(document.getElementById("demo3"), colours, titlenames[2]);
 
     </script>
 
