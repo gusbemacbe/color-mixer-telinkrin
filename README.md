@@ -38,7 +38,7 @@ A =   0    0    0    1 0"
 
 But still, what are 0.33s and 0s? 0.33s are grey and 0s are black. But I checked that in colour picker and it does not exist. Well, it is a discrete mathematics matrix. I explain the matrix:
 
-![example 1](example1.svg)
+![example 1](example1.svg)<br/>
 ![example 2](example2.svg)
 
 Then it is `rgba(84, 84, 84)`, you can check this real RGBA in the colour picker, you will see that it is exactly grey (`#545454`), that is a grayscale colour which gives the filter effect.
