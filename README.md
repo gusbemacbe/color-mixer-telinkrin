@@ -1,6 +1,6 @@
 ![logo](logo.svg)
 
-This plugin allows to convert and overwrite the original colours of [Suru++ 25](/gusbemacbe/suru-plus) to Telinkrin colours of as [Suru++ Telinkrin](/gusbemacbe/suru-plus-telinkrin).
+This plugin allows to convert and overwrite the original colours of [Suru++ 25](https://github.com/gusbemacbe/suru-plus) to Telinkrin colours of [Suru++ Telinkrin](https://github.com/gusbemacbe/suru-plus-telinkrin).
 
 ## **How does it work?**
 
@@ -57,7 +57,7 @@ These three colours will be used to create a gradient map:
 
 ...that we are going to map our grayscale map to.
 
-Soueidan says that, in order to use these colours in `feComponentTransfer`, we need to get the values of the R, G, and B channels of each colou. Since `tableValues are provided` in fractions, we will need to convert the RGB values to fractions. Colour values are usually in the range [0, 255]. To convert these values to fractions, we need to divide them by 255.
+Soueidan says that, in order to use these colours in `feComponentTransfer`, we need to get the values of the R, G, and B channels of each colour. Since `tableValues are provided` in fractions, we will need to convert the RGB values to fractions. Colour values are usually in the range [0, 255]. To convert these values to fractions, we need to divide them by 255.
 
 For example, 1st colour (`#356170`) has the following RGB values:
 
@@ -174,7 +174,7 @@ Like demo 1, it does not convert to real hexadecimal colours, so you have to col
 
 ## References
 
-<p id="soueidan">SOUEIDAN Sarah, "<em>SVG Filter Effects: Duotone Images with <code>&#60;feComponentTransfer&#62;</code></em>, https://tympanus.net/codrops/2019/02/05/svg-filter-effects-duotone-images-with-fecomponenttransfer/, February 2019, (accessed February 11, 2019).</p>
+<p id="soueidan">SOUEIDAN Sarah, ‘<em>SVG Filter Effects: Duotone Images with <code>&#60;feComponentTransfer&#62;</code>’</em>, https://tympanus.net/codrops/2019/02/05/svg-filter-effects-duotone-images-with-fecomponenttransfer/, February 2019, (accessed February 11, 2019).</p>
 
 ### Questions
 
@@ -195,4 +195,4 @@ Like demo 1, it does not convert to real hexadecimal colours, so you have to col
 
 ## Licence
 
-© 2019 GPL3 Colour Telinkrizer by [Daniel Ruiz de Alegría](daniel@drasite.com).
+© 2019 GPL3 Colour Telinkriser by [Daniel Ruiz de Alegría](daniel@drasite.com).
