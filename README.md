@@ -43,7 +43,7 @@ But still, what are 0.33s and 0s? 0.33s are grey and 0s are black. But I checked
 
 Then it is `rgba(84, 84, 84)`, you can check this real RGBA in the colour picker, you will see that it is exactly grey (`#545454`), that is a grayscale colour which gives the filter effect.
 
-As for 0s, as you know very well that it is easy, $RGBA = \begin{bmatrix} 0 & 0 & 0 & 1 \end{bmatrix}$ gives `rgba(0, 0, 0, 1)` which totally black and non-transparent (alpha) and $RGBA = \begin{bmatrix} 0 & 0 & 0 & 0 \end{bmatrix}$ gives `rgba(0, 0, 0, 0)` which is totally black, but totally transparent (alpha).
+As for 0s, as you know very well that it is easy, ![example 3](example3.svg) gives `rgba(0, 0, 0, 1)` which totally black and non-transparent (alpha) and ![example 4](example4.svg) gives `rgba(0, 0, 0, 0)` which is totally black, but totally transparent (alpha).
 
 Now that the original colours of Suru++ are essentially made of a gray gradient, we want to create a Telinkrin gradient map to map the gray gradient to. 
 
