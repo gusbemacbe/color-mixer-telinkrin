@@ -174,7 +174,7 @@ Like demo 1, it does not convert to real hexadecimal colours, so you have to col
 
 ## References
 
-<p id="soueidan">SOUEIDAN Sarah, "<em>SVG Filter Effects: Duotone Images with <code><feComponentTransfer></code></em>, https://tympanus.net/codrops/2019/02/05/svg-filter-effects-duotone-images-with-fecomponenttransfer/, February 2019, (accessed February 11, 2019).</p>
+<p id="soueidan">SOUEIDAN Sarah, "<em>SVG Filter Effects: Duotone Images with <code>&#60;feComponentTransfer&#62;</code></em>, https://tympanus.net/codrops/2019/02/05/svg-filter-effects-duotone-images-with-fecomponenttransfer/, February 2019, (accessed February 11, 2019).</p>
 
 ### Questions
 
@@ -184,5 +184,15 @@ Like demo 1, it does not convert to real hexadecimal colours, so you have to col
 
 ### Plugins
 
-* [PineTools](How to transform black into any given colour using only CSS filters)
+* [PineTools – Original to grayscale converter](https://pinetools.com/greyscale-desaturate-color)
 * [SVG Gradient Map](https://yoksel.github.io/svg-gradient-map/)
+
+## Credits
+
+- [Sakal](https://hashnode.com/Sakal)
+- [Hipkiss](https://hashnode.com/hipkiss)
+- [Daniel Ruiz de Alegría](@daniruiz)
+
+## Licence
+
+© 2019 GPL3 Colour Telinkrizer by [Daniel Ruiz de Alegría](daniel@drasite.com).
