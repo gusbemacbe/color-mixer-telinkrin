@@ -6,7 +6,7 @@ This plugin allows to convert and overwrite the original colours of [Suru++ 25](
 
 The SVG Filter will show you how to use `feComponentTransfer` to create a colour filter effect, i.e., Telinkrin colour filter effect.
 
-According to <a href="soueidan">Soueidan (2019)</a>, ‘the `feComponentTransfer` primitive allows you to modify each of the R, G, B and A components present in a pixel. In other words, feComponentTransfer allows the independent manipulation of each color channel, as well as the alpha channel, in the input element.’
+According to <a href="#soueidan">Soueidan (2019)</a>, ‘the `feComponentTransfer` primitive allows you to modify each of the R, G, B and A components present in a pixel. In other words, feComponentTransfer allows the independent manipulation of each color channel, as well as the alpha channel, in the input element.’
 
 To recreate the colour effect in SVG, you need to desaturate firstly, using the `<feColorMatrix>` filter primitive. The `feColorMatrix` provides a colour matrix that specifies the amount of red, green, and blue. By providing equal amounts of these three components, the matrix is created to convert into a grayscale version of itself:
 
@@ -174,6 +174,15 @@ Like demo 1, it does not convert to real hexadecimal colours, so you have to col
 
 ## References
 
-<span id="soueidan">
-  <p>SOUEIDAN Sarah, "SVG Filter Effects: Duotone Images with `<feComponentTransfer>`", https://tympanus.net/codrops/2019/02/05/svg-filter-effects-duotone-images-with-fecomponenttransfer/, February 2019, (accessed February 11, 2019)</p>
-</span>
+<p id="soueidan">SOUEIDAN Sarah, "<em>SVG Filter Effects: Duotone Images with <code><feComponentTransfer></code></em>, https://tympanus.net/codrops/2019/02/05/svg-filter-effects-duotone-images-with-fecomponenttransfer/, February 2019, (accessed February 11, 2019).</p>
+
+### Questions
+
+* [How to transform black into any given colour using only CSS filters](https://stackoverflow.com/questions/42966641/how-to-transform-black-into-any-given-color-using-only-css-filters/43960991)
+* [Mixing two RGB color vectors to get resultant](https://stackoverflow.com/questions/1892020/mixing-two-rgb-color-vectors-to-get-resultant)
+* [Mixing two colors “naturally” in Javascript](https://stackoverflow.com/questions/14819058/mixing-two-colors-naturally-in-javascript)
+
+### Plugins
+
+* [PineTools](How to transform black into any given colour using only CSS filters)
+* [SVG Gradient Map](https://yoksel.github.io/svg-gradient-map/)
