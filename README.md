@@ -121,7 +121,7 @@ Here is the full SVG filter codes:
 
 ## Demo 1
 
-You can check the HTML file containing the SVG codes: [Demo 1](demo1.html)
+You can check the HTML file containing the SVG codes: [Demo 1](https://gusbemacbe.github.io/color-mixer-telinkrin/demo1.html)
 
 ### Advantages
 
@@ -137,7 +137,7 @@ KDE does not support SVG filter feature, so you have to convert SVG of all icons
 
 ## Demo 2
 
-As we want to get rid of colour-picking colour by colour and know KDE does not support it, we have to overwrite or replace all colours of all Suru++ icons, using `sed --in-place --follow-symlinks -e 's/original_colour/telinkrin_colour/g`, we created JavaScript codes that will use HSL of Telinkrin colour to convert the original colours to real hexadecimal codes once in a while, so we can copy all hexadecimal codes once in a while, without having to colour-pick colour by colour. The original colours are converted according to the **light** of Telinkrin HSL. Here is the [demo 2](demo2.html)
+As we want to get rid of colour-picking colour by colour and know KDE does not support it, we have to overwrite or replace all colours of all Suru++ icons, using `sed --in-place --follow-symlinks -e 's/original_colour/telinkrin_colour/g`, we created JavaScript codes that will use HSL of Telinkrin colour to convert the original colours to real hexadecimal codes once in a while, so we can copy all hexadecimal codes once in a while, without having to colour-pick colour by colour. The original colours are converted according to the **light** of Telinkrin HSL. Here is the [demo 2](https://gusbemacbe.github.io/color-mixer-telinkrin/demo2.html)
 
 ### Disadvantages
 
@@ -149,7 +149,7 @@ There are CSS filters as `mix-blend-mode: color` and `filter: grayscale(100%);`.
 
 It is important that `background: #6DA5B7; mix-blend-mode: color` works only with images, and not with `div` with the tag `background-color: #00f00`. 
 
-As we want to use `filter` to give Telinkrin effect, we need to convert the colour to CSS filter, then we refer to [How to transform black into any given color using only CSS filters](https://stackoverflow.com/a/43960991) whose example of codes provided by MultiplyByZer0. Apply the Telinkrin color RGB (`rgb(109, 165, 183)`) in the [demo 4](demo4.html). 
+As we want to use `filter` to give Telinkrin effect, we need to convert the colour to CSS filter, then we refer to [How to transform black into any given color using only CSS filters](https://stackoverflow.com/a/43960991) whose example of codes provided by MultiplyByZer0. Apply the Telinkrin color RGB (`rgb(109, 165, 183)`) in the [demo 3](https://gusbemacbe.github.io/color-mixer-telinkrin/demo3.html). 
 
 Click to compute filters, we get `filter: invert(69%) sepia(19%) saturate(676%) hue-rotate(148deg) brightness(86%) contrast(90%);`, then like:
 
@@ -164,7 +164,7 @@ Click to compute filters, we get `filter: invert(69%) sepia(19%) saturate(676%) 
 }
 ```
 
-Converting the original colours to produce Telinkrin colours, and we also must add `grayscale(100%)` to it. Here is the [demo 4](demo4.html).
+Converting the original colours to produce Telinkrin colours, and we also must add `grayscale(100%)` to it. Here is the [demo 4](https://gusbemacbe.github.io/color-mixer-telinkrin/demo4.html).
 
 ### Disadvantages
 
