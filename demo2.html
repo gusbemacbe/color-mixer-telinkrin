@@ -141,14 +141,10 @@
         return `#${toHex(r)}${toHex(g)}${toHex(b)}`
       }
 
-      function createColorElement(color) 
+      function createColorElement (color) 
       {
-        return Object.assign(
-          document.createElement('input'),
-          {
-            type: 'color', 
-            value: color 
-          })
+        return Object.assign(document.createElement('P'),
+                {style: `background: ${color}; border-radius: 10px; color: #FFF; height: 100px; line-height: 100px; margin: 20px; text-align: center; width: 100px;`, innerText: color})
       }
 
       window.onload = () => 
@@ -170,10 +166,10 @@
   <body>
 
     <h1>Original</h1> 
-    <div id="oldColors"></div>
+    <div class="container3" id="oldColors"></div>
  
     <h1>Telinkrin</h1>
-    <div id="newColors"></div>
+    <div class="container3" id="newColors"></div>
   </body>
 
 </html>
