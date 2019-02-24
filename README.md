@@ -191,8 +191,8 @@ Like demo 1, it does not convert to real hexadecimal colours, so you have to col
 
 - [Sakal](https://hashnode.com/Sakal)
 - [Hipkiss](https://hashnode.com/hipkiss)
-- [Daniel Ruiz de Alegría](@daniruiz)
+- [Daniel Ruiz de Alegría](https://github.com/daniruiz)
 
 ## Licence
 
-© 2019 GPL3 Colour Telinkriser by [Daniel Ruiz de Alegría](daniel@drasite.com).
+© 2019 GPL3 Colour Telinkriser by [Daniel Ruiz de Alegría](https://drasite.com) \<daniel@drasite.com\>.
